@@ -1,5 +1,16 @@
 #include <stdio.h>
 
+void RealizarSoma(){
+  float a=0,x=0,b=0;
+  printf("Soma -> A+B\n");
+  printf("Valor de A:\n");
+  scanf("%f", &a);
+  printf("Valor de B:\n");
+  scanf("%f", &b);
+  x=a+b;
+  printf("A soma deu: %.2f", x);
+}
+
 int main(void) {
   int op;
   float a=0,x=0,b=0;
@@ -10,13 +21,7 @@ int main(void) {
 
   switch(op){
     case 1:
-      printf("Soma -> A+B\n");
-      printf("Valor de A:\n");
-      scanf("%f", &a);
-      printf("Valor de B:\n");
-      scanf("%f", &b);
-      x=a+b;
-      printf("A soma deu: %.2f", x);
+      RealizarSoma();
       break;
     case 2:
       printf("Subtração -> A-B\n");
