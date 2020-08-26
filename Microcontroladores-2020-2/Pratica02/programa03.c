@@ -50,14 +50,13 @@ int main(void) {
       }
       break;
     case 5:
-      printf("Seno -> A*B\n");
-      printf("Valor de A:\n");
-      scanf("%f", &a);
-      printf("Valor de B:\n");
-      scanf("%f", &b);
-      x=a*b;
-      printf("A multiplicação deu: %.2f", x);
+      printf("Seno \n");
       break;
+    case 6:
+      printf("Cosseno\n");
+      break;
+    default:
+      printf("Operação inexistente\n");
   }
   
   return 0;
