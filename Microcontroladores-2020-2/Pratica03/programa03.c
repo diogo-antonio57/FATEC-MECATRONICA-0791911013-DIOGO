@@ -18,6 +18,8 @@ int main(void) {
   float angulo;
   printf("Digite o angulo\n");
   scanf("%f", &angulo);
-  printf("O valor de %f em radiano é %f", angulo, ConvertRadiano(angulo));
+  printf("O valor de %f em radiano é %f\n", angulo, ConvertRadiano(angulo));
+  printf("Valor de seno %f\n", calcularSeno(angulo));
+  printf("Angulo: %f\n",angulo);
   return 0;
 }
