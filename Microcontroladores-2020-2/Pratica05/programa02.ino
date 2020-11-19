@@ -1,7 +1,3 @@
-/ *
-  Programa criado para testar nosso hardware - 2020 - 2
-* /
-
 // Constantes do programa - mapa de I / O's
 const byte SERVO = 5 ;
 const byte MOTOR_DC = 3 ;
