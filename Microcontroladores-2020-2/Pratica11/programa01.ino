@@ -51,17 +51,19 @@ void  inicializa_hardware () {
 
 void  inicializar_wifi () {
   // Conecta com o nome e a senha da rede
-  Wi-fi. begin ( " O_NOME_DA_SUA_REDE " , " A_SENHA_DA_SEU_REDE " );
+  // LEMBRAR DE APAGAR ESSA INFORMAÇÃO AO SUBIR NO GITHUB !!
+  Wi-fi.begin ( " Nome_da_rede " , " Senha_da_rede " );
   // Aguarda a comunicação estar pronta
-  Serial. imprimir ( " Conectando " )aD
+  Serial.imprimir ( " Conectando " );
+  enquanto (WiFi. status ()! = WL_CONNECTED)
   {
     atraso ( 500 );
     Serial. imprimir ( " . " );
   }
-  Serial. println ();
+  Serial.println ();
 
-  Serial. print ( " Conectado, Dados da Conexão (IP): " );
-  Serial. println (WiFi. localIP ());
+  Serial.print ( " Conectado, Dados da Conexão (IP): " );
+  Serial.println (WiFi. localIP ());
 }
 
 void  setup () {
