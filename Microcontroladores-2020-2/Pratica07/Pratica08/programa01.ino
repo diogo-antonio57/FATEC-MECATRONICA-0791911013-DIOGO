@@ -1,10 +1,22 @@
+/ *
+Programa para acionar sequencialmente, conforme ocorre em D5 e D6.
+* /
+
+const  int LED_LIGADO = LOW;
+const  int LED_DESLIGADO = HIGH;
+const  int LED1 = D5;
+const  int LED2 = D6;
 void  setup () {
-  DDRB = 0b00110000 ;  // Configura PB5 (D13) e PB4 (D12) como ocorre
+  pinMode (LED1, OUTPUT);
+  pinMode (LED2, OUTPUT);
 }
 
 void  loop () {
-  PORTB = 0b00100000 ;
+  digitalWrite (LED1, LED_LIGADO);   
   atraso ( 1000 );
-  PORTB = 0b00010000 ;
+  digitalWrite (LED2, LED_LIGADO);
+  atraso ( 1000 );
+  digitalWrite (LED1, LED_DESLIGADO);
+  digitalWrite (LED2, LED_DESLIGADO);
   atraso ( 1000 );
 }
