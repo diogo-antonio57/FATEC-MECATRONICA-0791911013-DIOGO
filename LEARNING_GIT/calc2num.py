@@ -3,6 +3,6 @@ a = input()
 print('digite o segundo número\n')
 b = input()
 
-result = a + b
+result = float(a) + float(b)
 
 print(f'O resultado da soma é: {result}')
